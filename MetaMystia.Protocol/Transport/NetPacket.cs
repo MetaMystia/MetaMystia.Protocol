@@ -23,8 +23,8 @@ public partial class NetPacket(NetworkMessage[] networkMessages)
     public static NetPacket FromBytes(byte[] data) =>
         MemoryPackSerializer.Deserialize<NetPacket>(data)!;
 
-    public NetworkMessage GetFirstAction() =>
+    public NetworkMessage GetFirstMessage() =>
         NetworkMessages.Length > 0 ? NetworkMessages[0] : throw new InvalidOperationException("Empty packet");
 
-    public static NetPacket FromSingleAction(NetworkMessage networkMessage) => new([networkMessage]);
+    public static NetPacket FromSingleMessage(NetworkMessage networkMessage) => new([networkMessage]);
 }
