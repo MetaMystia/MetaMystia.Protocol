@@ -10,4 +10,13 @@
       <PackageReference Include="MemoryPack" Version="1.21.4" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <PackageId>MetaMystia.Protocol</PackageId>
+        <Version>1.0.0</Version>  <!--DON'T FORGET TO INCREMENT ProtocolVersion IN MpConstants.cd WHEN CHANGING MAJOR/MINOR DIGITS-->
+        <Authors>Hz6826, MetaMikuAI</Authors>
+        <Company>MetaMystia</Company>
+        <PackageDescription>Network protocol DTOs for MetaMystia</PackageDescription>
+        <RepositoryUrl>https://github.com/MetaMystia/MetaMystia.Protocol</RepositoryUrl>
+    </PropertyGroup>
+
 </Project>
