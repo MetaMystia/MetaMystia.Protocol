@@ -1,14 +1,15 @@
 ﻿using System;
 using MemoryPack;
+using MetaMystia.Protocol.Messages;
 
 namespace MetaMystia.Protocol.Transport;
 
 // ReSharper disable UnusedMember.Global
 [MemoryPackable]
-public partial class NetPacket(Action[] actions)
+public partial class NetPacket(NetworkMessage[] networkMessages)
 {
     // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
-    public Action[] Actions { get; set; } = actions;
+    public NetworkMessage[] NetworkMessages { get; set; } = networkMessages;
 
     public byte[] ToBytesWithLength()
     {
@@ -22,8 +23,8 @@ public partial class NetPacket(Action[] actions)
     public static NetPacket FromBytes(byte[] data) =>
         MemoryPackSerializer.Deserialize<NetPacket>(data)!;
 
-    public Action GetFirstAction() =>
-        Actions.Length > 0 ? Actions[0] : throw new InvalidOperationException("Empty packet");
+    public NetworkMessage GetFirstAction() =>
+        NetworkMessages.Length > 0 ? NetworkMessages[0] : throw new InvalidOperationException("Empty packet");
 
-    public static NetPacket FromSingleAction(Action action) => new([action]);
+    public static NetPacket FromSingleAction(NetworkMessage networkMessage) => new([networkMessage]);
 }
