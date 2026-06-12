@@ -15,6 +15,10 @@
     </ItemGroup>
 
     <PropertyGroup>
+        <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <PackageId>MetaMystia.Protocol</PackageId>
 <!--        <Version>1.0.0</Version>  &lt;!&ndash;DON'T FORGET TO INCREMENT ProtocolVersion IN MpConstants.cd WHEN CHANGING MAJOR/MINOR DIGITS&ndash;&gt;-->
         <Authors>Hz6826, MetaMikuAI</Authors>
