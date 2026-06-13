@@ -1,4 +1,4 @@
-﻿namespace MetaMystia.Protocol.Enums;
+namespace MetaMystia.Protocol.Enums;
 
 // ReSharper disable UnusedMember.Global
 public enum GuestFsmState
