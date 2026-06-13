@@ -74,3 +74,10 @@ public enum ServeType
     Player,
     Boss
 }
+
+public enum SkinSelectedType
+{
+    Default = 0,
+    Explicit = 1,
+    DLC = 2
+}
