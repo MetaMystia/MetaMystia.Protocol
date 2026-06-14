@@ -1,12 +1,23 @@
-﻿namespace MetaMystia.Protocol.Enums;
+namespace MetaMystia.Protocol.Enums;
 
+/// <summary>
+/// QTE增益效果枚举
+/// </summary>
 // ReSharper disable UnusedMember.Global
 public enum QTEBuff
 {
-    InstantEvaluation = 0,  // 立即完食
-    PatientFreeze = 1,      // 耐心不减
-    ThrowDeliver = 2,       // 投掷上菜
-
-    Fever = 3,              // 热火朝天
-    FeverInfinite = -1     // 永续热火朝天
+    /// <summary>立即完食</summary>
+    InstantEvaluation = 0,
+    
+    /// <summary>耐心不减</summary>
+    PatientFreeze = 1,
+    
+    /// <summary>投掷上菜</summary>
+    ThrowDeliver = 2,
+    
+    /// <summary>热火朝天</summary>
+    Fever = 3,
+    
+    /// <summary>永续热火朝天</summary>
+    FeverInfinite = -1
 }

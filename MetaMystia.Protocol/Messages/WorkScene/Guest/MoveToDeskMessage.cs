@@ -1,7 +1,10 @@
-﻿using MemoryPack;
+using MemoryPack;
 
 namespace MetaMystia.Protocol.Messages.WorkScene.Guest;
 
+/// <summary>
+/// 主机 → 所有客机：通告客人移动到指定桌子
+/// </summary>
 [MemoryPackable]
 public partial class MoveToDeskMessage : NetworkMessage
 {

@@ -12,5 +12,8 @@ namespace MetaMystia.Protocol.Messages.Common;
 [PublicRelay]
 public partial class PlayerChangeSkinMessage : NetworkMessage
 {
-    public PlayerSkinData Skin { get; set; } = null!;  // 反序列化时一定会被赋值，所以用 null! 消除警告
+    /// <summary>
+    /// 更换后的皮肤数据
+    /// </summary>
+    public PlayerSkinData Skin { get; set; } = null!;
 }

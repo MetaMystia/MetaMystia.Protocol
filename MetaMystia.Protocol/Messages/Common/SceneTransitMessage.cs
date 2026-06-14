@@ -11,5 +11,8 @@ namespace MetaMystia.Protocol.Messages.Common;
 [PublicRelay]
 public partial class SceneTransitMessage : NetworkMessage
 {
+    /// <summary>
+    /// 切换后的 Scene
+    /// </summary>
     public Scene Scene { get; set; }
 }

@@ -1,8 +1,11 @@
-﻿using MemoryPack;
+using MemoryPack;
 using MetaMystia.Protocol.Enums;
 
 namespace MetaMystia.Protocol.Messages.WorkScene.Guest;
 
+/// <summary>
+/// 主机 → 所有客机：通告客人下单结果
+/// </summary>
 [MemoryPackable]
 public partial class GenerateOrderMessage : NetworkMessage
 {

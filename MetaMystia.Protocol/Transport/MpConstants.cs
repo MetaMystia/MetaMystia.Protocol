@@ -1,10 +1,23 @@
-﻿namespace MetaMystia.Protocol.Transport;
+namespace MetaMystia.Protocol.Transport;
 
 // ReSharper disable UnusedMember.Global
+/// <summary>
+/// 多人游戏协议常量定义
+/// </summary>
 public static class MpConstants
 {
+    /// <summary>默认端口号</summary>
     public const int DefaultPort = 40815;
+    
+    /// <summary>主机的UID（固定为0）</summary>
     public const int HostUid = 0;
+    
+    /// <summary>未分配的UID值</summary>
     public const int UnassignedUid = -1;
-    public const int ProtocolVersion = 1;  // 大/小版本更新时千万不要忘记改！（修订号更改一般不用改）
+    
+    /// <summary>
+    /// 协议版本号
+    /// 大/小版本更新时需要修改（修订号更改一般不用改）
+    /// </summary>
+    public const int ProtocolVersion = 1;
 }

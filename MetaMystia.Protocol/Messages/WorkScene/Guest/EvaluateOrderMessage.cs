@@ -1,9 +1,12 @@
-﻿using MemoryPack;
+using MemoryPack;
 using MetaMystia.Protocol.Data;
 using MetaMystia.Protocol.Enums;
 
 namespace MetaMystia.Protocol.Messages.WorkScene.Guest;
 
+/// <summary>
+/// 主机 → 所有客机：通告客人评价订单结果
+/// </summary>
 [MemoryPackable]
 public partial class EvaluateOrderMessage : NetworkMessage
 {
