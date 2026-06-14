@@ -5,8 +5,8 @@ using MetaMystia.Protocol.Transport;
 namespace MetaMystia.Protocol.Messages.Common;
 
 /// <summary>
-/// 任何玩家 → 所有玩家：发送聊天消息
-/// 原 MessageAction ~~（MessageMessage手动滑稽）~~
+/// 任何玩家 → 所有玩家：发送聊天消息<br/>
+/// 原 MessageAction
 /// </summary>
 [MemoryPackable]
 [PublicRelay]
@@ -18,7 +18,7 @@ public partial class ChatMessage : NetworkMessage
     
     public string Message { get; private set; } = string.Empty;
     
-    // 简单的工厂方法
+    /// <summary> 简单的工厂方法 </summary>
     // ReSharper disable once UnusedMember.Global
     public static ChatMessage Create(string msg)
     {

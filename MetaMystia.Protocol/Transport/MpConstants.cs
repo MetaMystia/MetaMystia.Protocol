@@ -16,8 +16,8 @@ public static class MpConstants
     public const int UnassignedUid = -1;
     
     /// <summary>
-    /// 协议版本号
+    /// 协议版本号<br/>
     /// 大/小版本更新时需要修改（修订号更改一般不用改）
     /// </summary>
-    public const int ProtocolVersion = 1;
+    public const short ProtocolVersion = 1;
 }

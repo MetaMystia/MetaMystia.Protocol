@@ -12,8 +12,5 @@ namespace MetaMystia.Protocol.Messages.Common;
 [PublicRelay]
 public partial class PlayerChangeSkinMessage : NetworkMessage
 {
-    /// <summary>
-    /// 更换后的皮肤数据
-    /// </summary>
     public PlayerSkinData Skin { get; set; } = null!;
 }
